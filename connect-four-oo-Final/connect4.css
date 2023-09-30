@@ -1,0 +1,60 @@
+/* Add styles for the container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #2796a0; /* Add a background color */
+}
+
+#container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: silver; /* Silver background color */
+}
+
+/* Add styles for the title */
+h1 {
+  color: midnightblue; /* Midnight blue color */
+}
+
+/* game board table */
+#board {
+  background-color: navy; /* Silver background color */
+}
+
+#board td {
+  width: 60px; /* Adjust the width as desired */
+  height: 60px; /* Adjust the height as desired */
+  border: solid 1px #666;
+  background-color: orange; /* Use the CSS color name 'orange' */
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: red;
+}
+
+.piece.p2 {
+  background-color: blue;
+}
+
+/* column-top is a table row of clickable areas for each column */
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: aqua; /* Use the CSS color name 'aqua' */
+}
